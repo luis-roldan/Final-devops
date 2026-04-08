@@ -32,7 +32,9 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Start the app in background
-        run: node index.js > app.log 2>&1 &
+        run: |
+          FILE=$(find . -name "index.js" | head -n 1)
+          node $FILE > app.log 2>&1 &
       - name: Wait for app to be ready
         run: npx wait-on http://localhost:3000 --timeout 60000 || (cat app.log && exit 1)
       - name: Run tests
