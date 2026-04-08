@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test":  "node health.test.js",
-    "lint":  "eslint ."
-
+    "test": "node health.test.js",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0"
+  }
 }
