@@ -1,0 +1,16 @@
+{
+  "name": "final-practical-luisroldan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test":  "node health.test.js",
+    "lint":  "eslint ."
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
